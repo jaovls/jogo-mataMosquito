@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #457B9D;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100vh;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+}
+
+#logo{
+    color: #F1FAEE;
+    font-size: 28px;
+    font-weight: bold;
+    display: flex;
+    gap: 10px;
+}
+
+.img-logo{
+    width: 30px;
+    height: 30px;
+}
+
+.nav-link{
+    color: #F1FAEE;
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+main{
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    color: white;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.botao a{
+    color: white;
+    font-size: 25px;
+    text-decoration: none;
+    background-color: #E63946;
+    width: 80px;
+    border: 2px solid black;
+    border-radius: 10px;
+    color: white;
+    padding: 15px;
+    box-shadow: 5px 5px 5px black;
+    text-shadow: none;
+    font-weight: 500;
+    transition: background-color 0.2s ease, transform 0.5s ease;
+}
+
+.botao a:hover,.botao:hover{
+    background-color: green;
+    color: white;
+    transform: scale(1.10);
+    transition: 0.5s ease;
+}
