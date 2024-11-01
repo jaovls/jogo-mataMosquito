@@ -4,7 +4,9 @@
 }
 
 body{
-    background-color: #457B9D;
+    background-image: url(../imgs/fundo-mosquito.webp);
+    background-position: center;
+    background-size: contain;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     height: 100vh;
 }
@@ -46,7 +48,7 @@ main{
     justify-content: center;
     align-items: center;
     gap: 60px;
-    color: white;
+    color: rgb(255, 255, 255);
 }
 
 .container{
