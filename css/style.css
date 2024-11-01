@@ -1,13 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Jolly+Lodger&family=Tiny5&family=Titan+One&display=swap');
+
 *{
     margin: 0;
     padding: 0;
 }
 
 body{
-    background-image: url(../imgs/fundo-mosquito.webp);
+    background-image: url(../imgs/fundo-mosquito2.webp);
     background-position: center;
     background-size: contain;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Tiny5", sans-serif;
+    letter-spacing: 2px;
     height: 100vh;
 }
 
@@ -48,7 +51,21 @@ main{
     justify-content: center;
     align-items: center;
     gap: 60px;
-    color: rgb(255, 255, 255);
+    color: white;
+    font-size: 25px;
+}
+
+.texto{
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+    max-height: 50%;
+    text-align: center;
+    background-color: transparent;
+    backdrop-filter: blur(15px);
+    padding: 45px;
+    border: 1px solid transparent;
+    border-radius: 50px;
 }
 
 .container{
@@ -57,12 +74,23 @@ main{
     height: 100%;
 }
 
+.botao{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    animation: pulsar 1.5s infinite; 
+}
+
 .botao a{
+    display: flex;
+    justify-content: center;
+    max-width: 50%;
+    max-height: 50%;
     color: white;
     font-size: 25px;
     text-decoration: none;
     background-color: #E63946;
-    width: 80px;
+    width: 450px;
     border: 2px solid black;
     border-radius: 10px;
     color: white;
@@ -73,9 +101,32 @@ main{
     transition: background-color 0.2s ease, transform 0.5s ease;
 }
 
-.botao a:hover,.botao:hover{
+.botao a:hover{
     background-color: green;
-    color: white;
-    transform: scale(1.10);
     transition: 0.5s ease;
+}
+
+.nav-bar{
+    display: flex;
+    background-color: transparent;
+    backdrop-filter: blur(30px);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: 0.5s ease;
+}
+
+@keyframes pulsar {
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.nav-bar:hover{
+    size: 40px;
+}
+
+.nav-bar a:hover{
+    box-shadow: 4px 4px 4px 4px;
 }
