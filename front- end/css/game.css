@@ -1,0 +1,27 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background: url(../imgs/fundo-mosquito1.webp) no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.img-coracao{
+    width: 40px;
+    margin-left: 20px;
+}
+
+#hud{
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+html{
+    cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"><foreignObject width="100%" height="100%"><div xmlns="http://www.w3.org/1999/xhtml" style="width:100%;height:100%;border-radius:50%;background:conic-gradient(from 90deg at 4px 4px,%230000 90deg, %23ff0000 0) -4px -4px/calc(50% + 2px) calc(50% + 2px),repeating-radial-gradient(%230000 0 22%,%23ff0000 23% 32%);" ></div></foreignObject></svg>')  24 24, auto;
+}

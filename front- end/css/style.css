@@ -7,11 +7,14 @@
 
 body{
     background-image: url(../imgs/fundo-mosquito2.webp);
+    background-repeat: no-repeat;
+    background-size: cover; /* ou contain */
     background-position: center;
-    background-size: contain;
     font-family: "Tiny5", sans-serif;
     letter-spacing: 2px;
     height: 100vh;
+    overflow: hidden;
+    position: relative;
 }
 
 header{
@@ -50,6 +53,7 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
+    height: auto;
     gap: 60px;
     color: white;
     font-size: 25px;
@@ -78,7 +82,8 @@ main{
     display: flex;
     justify-content: center;
     text-align: center;
-    animation: pulsar 1.5s infinite; 
+    animation: pulsar 1.5s infinite;
+  
 }
 
 .botao a{
@@ -128,5 +133,10 @@ main{
 }
 
 .nav-bar a:hover{
-    box-shadow: 4px 4px 4px 4px;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    box-shadow: 4px 4px 4px black;
+
 }
+
